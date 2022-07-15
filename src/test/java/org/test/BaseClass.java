@@ -43,6 +43,10 @@ public class BaseClass {
 		driver.navigate().refresh();
 
 	}
+	public static void stop() {
+		driver.quit();
+
+	}
 	
 	public WebElement locateById(String id) {
 		WebElement findElement = driver.findElement(By.id(id));
